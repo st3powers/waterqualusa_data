@@ -1,0 +1,8 @@
+
+
+
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/zip' -d '{"sampleMedia":["Water"],"characteristicName":["Phosphorus"],"minresults":"100"}' 'https://www.waterqualitydata.us/data/Station/search?mimeType=csv&zip=yes'
+
+
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/zip' -d '{"sampleMedia":["Water"],"characteristicName":["Phosphorus"],"minresults":"100","dataProfile":"narrowResult"}' 'https://www.waterqualitydata.us/data/Result/search?mimeType=csv&zip=yes'
+
