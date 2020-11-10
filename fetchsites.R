@@ -1,3 +1,7 @@
+
+#https://cran.r-project.org/web/packages/nhdplusTools/vignettes/nhdplusTools.html
+#https://usgs-r.github.io/nhdplusTools/articles/nhdplusTools.html
+
 library(plyr)
 library(dplyr);
 library(data.table)
@@ -9,6 +13,10 @@ library(tidyverse);
 
 library(janitor)
 library(dataRetrieval)
+
+library(sf)
+library(nhdplusTools)
+
 
 #####################################
 
@@ -81,5 +89,3 @@ write.csv(sites_nitrogen %>% filter(resultCount>=100),"WQP_sites_Nitrogen_result
 write.csv(sites_nitrogen %>% filter(resultCount>=500),"WQP_sites_Nitrogen_resultcount500.csv")
 write.csv(sites_nitrogen %>% filter(resultCount>=1000),"WQP_sites_Nitrogen_resultcount1000.csv")
 
-
-###############################################
